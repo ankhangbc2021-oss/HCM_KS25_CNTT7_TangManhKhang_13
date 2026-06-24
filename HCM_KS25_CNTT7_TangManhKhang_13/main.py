@@ -26,11 +26,11 @@ def get_input_validate(prompt: str, _type: str = "text") -> str | float | int:
     """Lấy và kiểm tra
 
     Args:
-        prompt (str): _description_
+        prompt (str): Hỏi
         _type (str, optional): (float, quantity_int). Defaults to "text".
 
     Returns:
-        str | float | int: _description_
+        str | float | int: Trả về
     """
     while True:
         try:

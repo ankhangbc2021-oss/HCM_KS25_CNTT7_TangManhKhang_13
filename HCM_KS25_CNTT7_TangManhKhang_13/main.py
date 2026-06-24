@@ -9,7 +9,7 @@ def display_menu() -> str | int:
     Returns:
         str | int: _description_
     """
-    title = "=" * 15 + "MENU" + "=" * 15
+    title = "=" * 15 + " MENU " + "=" * 15
     print(f"""
 {title}
 1. Hiển thị danh sách bách hóa

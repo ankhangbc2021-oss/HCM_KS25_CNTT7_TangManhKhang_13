@@ -7,7 +7,7 @@ def display_menu() -> str | int:
     """Hiển thị menu
 
     Returns:
-        str | int: _description_
+        str | int: Trả về input.strip()
     """
     title = "=" * 15 + " MENU " + "=" * 15
     print(f"""
@@ -250,7 +250,7 @@ class InventoryManager:
             if search_id.lower() == getattr(item, "id").lower():
                 print("Đã tìm thấy mã:", getattr(item, "id"))
                 while True:
-                    choice = input("Bạn có chắc muốn xóa hàng hóa này không? (Y/N)")
+                    choice = input("Bạn có chắc muốn xóa hàng hóa này không? (Y/N): ")
                     if choice.lower() == "y":
                         self.items.remove(item)
                         print("Đã xóa thành công")
